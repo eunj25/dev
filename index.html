@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NTAS - AI 업무자동화 기술 리더</title>
+  <title>앤타스(NTAS)–AI 업무자동화(AI RPA) 기술 리더</title>
+  <!-- Favicon 기본 -->
+  <link rel="icon" type="image/png"  href="/favicon/symbol.ico">
+  <!-- font cdn -->
   <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/common.css">
-  <script src="/js/slider.js"></script>
+  <link rel="stylesheet" href="/css/mobile.css" media="only screen and (max-width: 768px)">
 </head>
 <body>
   <!-- Header -->
@@ -572,6 +575,12 @@
     
   </section>
 
+  <!-- <button class="go-top" aria-label="맨 위로 이동">↑</button> -->
+  <div id="goTop" class="go-top">
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M6 15L12 9L18 15" />
+    </svg>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
@@ -579,6 +588,26 @@
   </footer>
 
   <script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const header = document.querySelector(".header");
+      const hero = document.querySelector(".hero");
+
+      if (!header || !hero) return;
+
+      const changePoint = hero.offsetHeight * 0.5; // hero의 중간 지점
+
+      window.addEventListener("scroll", () => {
+        const scrolled = window.scrollY;
+
+        if (scrolled > changePoint) {
+          header.classList.add("scroll-active");
+        } else {
+          header.classList.remove("scroll-active");
+        }
+      });
+    });
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -586,6 +615,31 @@
         if (target) {
           target.scrollIntoView({ behavior: 'smooth' });
         }
+      });
+    });
+
+    // =======================
+    // Go to Top Button JS Logic
+    // =======================
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const goTop = document.querySelector(".go-top");
+
+      if (!goTop) return;
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 400) {
+          goTop.classList.add("show");
+        } else {
+          goTop.classList.remove("show");
+        }
+      });
+
+      goTop.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
       });
     });
 
