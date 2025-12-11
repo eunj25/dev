@@ -6,31 +6,31 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 3.75rem;
   background-color: transparent;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   
-  padding: 0 40px;
+  padding: 0 2.5rem;
   z-index: 100;
   transition: background-color .3s ease, backdrop-filter .3s ease;
 }
 header .logo {
   display: flex;
   align-items: center;
-  width: 140px;
+  width: 8.75rem;
 }
 .nav {
   display: flex;
-  gap: 32px;
+  gap: 2rem;
   align-items: center;
 }
 .nav-link {
   color: var(--bk);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   transition: color 0.25s ease;
@@ -41,21 +41,21 @@ header .logo {
 
 .header.scroll-active {
   background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(8px);
-  box-shadow: 0px 4px 54.1px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(.5rem);
+  box-shadow: 0rem .25rem 3.3813rem rgba(0, 0, 0, 0.05);
 }
 /* Go To Top Button - 2025 Trend 스타일 */
 #goTop {
   position: fixed;
-  right: 24px;
-  bottom: 32px;
-  width: 52px;
-  height: 52px;
+  right: 1.5rem;
+  bottom: 2rem;
+  width: 3.25rem;
+  height: 3.25rem;
 
-  border-radius: 14px;
+  border-radius: .875rem;
   background-color: var(--light-green);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(.625rem);
+  box-shadow: 0 .25rem 1.25rem rgba(0, 0, 0, 0.12);
 
   display: flex;
   justify-content: center;
@@ -64,7 +64,7 @@ header .logo {
   opacity: 0;
   visibility: hidden;
   transition: all 0.25s ease;
-  border: 1px solid var(--point);
+  border: .0625rem solid var(--point);
 }
 
 #goTop.show {
@@ -74,8 +74,8 @@ header .logo {
 }
 
 #goTop svg {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   stroke: var(--point);
   stroke-width: 2.4;
 }
@@ -96,16 +96,16 @@ header .logo {
   z-index: 10;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-left: 178px;
+  gap: 1rem;
+  margin-left: 11.125rem;
 }
 section.hero .logo {
-  width: 247px;
+  width: 15.4375rem;
 }
 .hero-main-text {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
 .hero-title {
   font-weight: 400;
@@ -115,7 +115,7 @@ section.hero .logo {
   font-weight: 700;
 }
 .hero-subtitle {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
   color: var(--bk);
 }
@@ -123,12 +123,12 @@ section.hero .logo {
 .hero-image-box {
   position: absolute;
   right: 0;
-  width: 700px;
-  height: 700px;
+  width: 43.75rem;
+  height: 43.75rem;
   background: url(/images/hero_image.png) center/contain no-repeat;
   bottom: 0;
   left: 58%;
-  /* left: 1113px; */
+  /* left: 69.5625rem; */
   z-index: 2;
 }
 .hero-images {
@@ -136,15 +136,15 @@ section.hero .logo {
   width: 100%;
   height: 100%;
 }
-.hero-images img:nth-child(1) {  width: 39px;}
-.hero-images img:nth-child(2) {  width: 87px;}
-.hero-images img:nth-child(3) {  width: 114px;}
+.hero-images img:nth-child(1) {  width: 2.4375rem;}
+.hero-images img:nth-child(2) {  width: 5.4375rem;}
+.hero-images img:nth-child(3) {  width: 7.125rem;}
 
 .hero-images .hero01 {
   position: absolute;
   right: 0;
-  top: -95px;
-  right: 120px;
+  top: -5.9375rem;
+  right: 7.5rem;
   z-index: 3;
   animation: floatUpDown01 1.8s ease-in-out infinite;
 }
@@ -154,7 +154,7 @@ section.hero .logo {
   }
 
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-0.625rem);
     /* 올라가는 높이 */
   }
 
@@ -177,7 +177,7 @@ section.hero .logo {
   }
 
   50% {
-    transform: translateY(-30px);
+    transform: translateY(-1.875rem);
     /* 올라가는 높이 */
   }
 
@@ -200,7 +200,7 @@ section.hero .logo {
   }
 
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-0.625rem);
     /* 올라가는 높이 */
   }
 
@@ -237,7 +237,7 @@ section.about .about-grid {
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 42px;
+  margin-bottom: 2.625rem;
 }
 section.about .logo-center {
   position: absolute;
@@ -248,22 +248,22 @@ section.about .logo-center {
 }
 section.about .value-circle {
   text-align: center;
-  width: 384px;
-  height: 384px;
+  width: 24rem;
+  height: 24rem;
   border-radius: 50%;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9));
-  border: 2px solid var(--border-gray);
+  border: .125rem solid var(--border-gray);
 
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--bk);
   transition: .3s ease;
 }
 section.about .value-circle:hover {
-  box-shadow: 0 11px 20px rgba(83, 5, 207, 0.5);
+  box-shadow: 0 .6875rem 1.25rem rgba(83, 5, 207, 0.5);
   transform: scale(1.02);
 }
 section.about .value-circle strong {
@@ -278,7 +278,7 @@ section.about .about-right {
 section.about .about-content {
   position: absolute;
   bottom: 16%;
-  padding: 78px;
+  padding: 4.875rem;
 }
 section.about .section-tag {
   background-color: var(--wh)!important;
@@ -303,8 +303,8 @@ section.partners {
 }
 .partners-left .partners-content {
   position: absolute;
-  padding-left: 178px;
-  padding-right: 78px;
+  padding-left: 11.125rem;
+  padding-right: 4.875rem;
   bottom: 20%;
 }
 section.partners .section-tag {
@@ -316,17 +316,17 @@ section.partners .section-tag {
   width: 46%;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 2.5rem;
   justify-content: center;
   align-items: center;
-  padding: 0 36px;
+  padding: 0 2.25rem;
 }
 .partners-right .logo-box {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
-  gap: 24px 40px;
+  gap: 1.5rem 2.5rem;
   align-self: stretch;
   flex-wrap: wrap;
       
@@ -337,7 +337,7 @@ section.partners .section-tag {
   opacity: 0.6;
   transition: opacity 0.3s ease;
   width: auto;
-  max-height: 45px;
+  max-height: 2.8125rem;
 }
 .logo-box img:hover {
   opacity: 1;
@@ -351,7 +351,7 @@ section.uipath {
   height: 100vh;
   overflow: hidden;
   background-color: var(--wh);
-  border-bottom: 2px solid var(--light-gray);
+  border-bottom: .125rem solid var(--light-gray);
 }
 section.uipath::after {
   content: "";
@@ -367,36 +367,36 @@ section.uipath::after {
 .uipath-header {
   position: absolute;
   z-index: 2;
-  top: 180px;
-  left: 180px;
+  top: 11.25rem;
+  left: 11.25rem;
 }
 .uipath-title {
-  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: 400;
   color: var(--bk);
   line-height: 1.6;
-  letter-spacing: -1.26px;
+  letter-spacing: -0.0788rem;
 }
 .uipath-subtitle {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   color: var(--gray);
   line-height: 1.6;
-  letter-spacing: -0.72px;
+  letter-spacing: -0.045rem;
 }
 
 .uipath-box.slide {
   position: absolute;
   inset: 0;
-  width: calc(100% - 178px);
-  left: 178px;
+  width: calc(100% - 11.125rem);
+  left: 11.125rem;
   bottom: 10%;
 
   display: flex;
   align-items: self-end;
   justify-content: space-between;
   
-  padding: 0 80px 0 20px;
+  padding: 0 5rem 0 1.25rem;
   opacity: 0;
   pointer-events: none;
   transition: opacity .8s ease;
@@ -406,11 +406,11 @@ section.uipath::after {
   position: relative;
   z-index: 2;
   max-width: 54%;
-  margin-bottom: 180px;
+  margin-bottom: 11.25rem;
 }
 .uipath-services.content .item-title {
-  margin: 0 0 12px;
-  transform: translateY(20px);
+  margin: 0 0 .75rem;
+  transform: translateY(1.25rem);
   opacity: 0;
   transition: .6s ease;
   font-weight: 700;
@@ -428,26 +428,26 @@ section.uipath .item-title::before {
   font-size: var(--h6-size);
   font-weight: var(--h6-weight);
   color: var(--gray);
-  margin-bottom: 12px;
+  margin-bottom: .75rem;
 }
 
 
 /* ==================== UiPath Process Section ==================== */
 section.uipath-process {
-  padding: 140px 180px;
+  padding: 8.75rem 11.25rem;
   height: auto;
   
 }
 section.uipath-process .uipath-process-content {
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 section.uipath-process .process-box {
-  border: 1px solid #DADADA;
-  border-radius: 12px;
+  border: .0625rem solid #DADADA;
+  border-radius: .75rem;
 }
 section.uipath-process .process-box img {
   width: 100%;
-  padding: 20px 40px;
+  padding: 1.25rem 2.5rem;
 }
 
 /* ==================== ntas-uipath ==================== */
@@ -455,26 +455,26 @@ section.ntas-uipath {
   width: 100%;
   height: auto;
   background: #F9F9F9;
-  padding: 140px 180px;
+  padding: 8.75rem 11.25rem;
 }
 section.ntas-uipath .ntas-feature {
-  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
 }
 
 section.ntas-uipath .ntas-uipath-process {
   display: flex;
   justify-content: space-between;
-  gap: 180px;
+  gap: 11.25rem;
 }
 section.ntas-uipath .process-item {
   flex: 1;
-  min-width: 250px;
+  min-width: 15.625rem;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 3.75rem;
 }
 section.ntas-uipath .item-image {
-  min-height: 285px;
+  min-height: 17.8125rem;
 }
 section.ntas-uipath .item-image img {
   height: 100%;
@@ -483,7 +483,7 @@ section.ntas-uipath .item-image img {
 section.ntas-uipath .item-content {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
 }
 section.ntas-uipath .item-title {
   font-weight: 700;
@@ -495,18 +495,18 @@ section.ntas-uipath .item-title::before {
   font-size: var(--h6-size);
   font-weight: var(--h6-weight);
   color: var(--gray);
-  margin-bottom: 12px;
+  margin-bottom: .75rem;
 }
 section.ntas-uipath .item-desc {
   font-size: var(--body01-size);
   font-weight: var(--body01-weight);
   color: var(--gray);
   line-height: 1.6;
-  letter-spacing: -0.48px;
+  letter-spacing: -0.03rem;
 }
 section.ntas-uipath .item-desc ul {
   list-style-type: disc;
-  padding-left: 20px;
+  padding-left: 1.25rem;
 }
 
 /* ==================== Business Section ==================== */
@@ -519,22 +519,22 @@ section.business {
 .business-header {
   position: absolute;
   z-index: 3;
-  top: 180px;
-  left: 180px;
+  top: 11.25rem;
+  left: 11.25rem;
 }
 .business-title {
-  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: 400;
   color: var(--bk);
   line-height: 1.6;
-  letter-spacing: -1.26px;
+  letter-spacing: -0.0788rem;
 }
 .business-subtitle {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   color: var(--gray);
   line-height: 1.6;
-  letter-spacing: -0.72px;
+  letter-spacing: -0.045rem;
 }
 
 section.business .business-slider {
@@ -544,7 +544,7 @@ section.business .business-slider {
   align-items: center;
 }
 section.business .business-slider .dots {
-  left: 200px;
+  left: 12.5rem;
   bottom: 15%;
 }
 
@@ -570,14 +570,14 @@ section.business .business-content:nth-child(4) {
 
 section.business .business-img {
   position: absolute;
-  right: -40px;
-  width: 870px;
-  height: 870px;
+  right: -2.5rem;
+  width: 54.375rem;
+  height: 54.375rem;
   aspect-ratio: 1/1;
 }
 section.business .business-content:nth-child(2) .business-img {bottom: 0;}
-section.business .business-content:nth-child(3) .business-img {bottom: -50px;}
-section.business .business-content:nth-child(4) .business-img {bottom: 50px;}
+section.business .business-content:nth-child(3) .business-img {bottom: -3.125rem;}
+section.business .business-content:nth-child(4) .business-img {bottom: 3.125rem;}
 
 section.business .business-img img {
   width: 100%;
@@ -586,19 +586,19 @@ section.business .business-img img {
 }
 section.business .business-box {
   position: absolute;
-  left: 178px;
+  left: 11.125rem;
   bottom: 15%;
-  width: calc(100% - 178px);
+  width: calc(100% - 11.125rem);
   display: flex;
   justify-content: space-between;
-  padding: 0 80px 0 20px;
+  padding: 0 5rem 0 1.25rem;
 }
 
 section.business .item-title{
-  transform: translateY(20px);
+  transform: translateY(1.25rem);
   opacity: 0;
   transition: .6s ease;
-  margin-bottom: 12px;
+  margin-bottom: .75rem;
   font-weight: 700;
 }
 section.business .item-title::before {
@@ -608,10 +608,10 @@ section.business .item-title::before {
   font-size: var(--h6-size);
   font-weight: var(--h6-weight);
   color: var(--gray);
-  margin-bottom: 12px;
+  margin-bottom: .75rem;
 }
 section.business .item-desc {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 /* ======== service-cards ======== */
@@ -619,30 +619,30 @@ section.business .item-desc {
   display: flex;
   gap: 12px;
   margin-top: 30px;
-  width: 1120px;
+  width: 65%;
 }
 .service-card {
   flex: 1;
-  backdrop-filter: blur(9px);
-  border-radius: 6px;
+  backdrop-filter: blur(.5625rem);
+  border-radius: .375rem;
   padding: 30px 30px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 268px;
+  height: 16.75rem;
 }
 section.business .business-content:nth-child(2) .service-card{
   background: rgba(69, 233, 172, 0.2);
-  border: 1px solid var(--point);
+  border: .0625rem solid var(--point);
 }
 section.business .business-content:nth-child(3) .service-cards {
-  gap: 6px;
+  gap: .375rem;
 }
 section.business .business-content:nth-child(3) .service-card{
   background: rgba(255, 255, 255, 0.58);
-  border: 1px solid var(--wh);
-  height: 300px;
+  border: .0625rem solid var(--wh);
+  height: 18.75rem;
 }
 section.business .business-content:nth-child(3) .card-title {
   color: var(--primary);
@@ -652,7 +652,7 @@ section.business .business-content:nth-child(3) .card-title {
 section.business .business-content:nth-child(3) .card-title::after {
   position:absolute;
   top: 10%;
-  right: -55px;
+  right: -3.4375rem;
   transform: translate(-50%);
   z-index: 3;
 
@@ -661,11 +661,11 @@ section.business .business-content:nth-child(3) .card-title::after {
   align-items: center;
   justify-content: center;
 
-  width: 26px;
-  height: 26px;
+  width: 1.625rem;
+  height: 1.625rem;
   color: var(--wh);
 
-  border-radius: 9999px;
+  border-radius: 624.9375rem;
   background: var(--ntas_bk, #222);
 }
 section.business .business-content:nth-child(3) .service-card:last-child .card-title::after {
@@ -673,14 +673,14 @@ section.business .business-content:nth-child(3) .service-card:last-child .card-t
 }
 section.business .business-content:nth-child(4) .service-card{
   background: rgba(73, 0, 255, 0.20);
-  border: 1px solid var(--primary);
+  border: .0625rem solid var(--primary);
 }
 
 .card-title {
   font-size: var(--h6-size);
   font-weight: var(--h6-weight);
   color: var(--bk);
-  letter-spacing: -0.54px;
+  letter-spacing: -0.0338rem;
 }
 
 .card-desc {
@@ -688,7 +688,7 @@ section.business .business-content:nth-child(4) .service-card{
   font-weight: var(--body01-weight);
   color: var(--bk);
   line-height: 1.6;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.05rem;
 }
 
 /* ==================== Services Section ==================== */
@@ -709,20 +709,20 @@ section.services {
 }
 .services-left .services-content h5 {
   color: var(--gray);
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 .services-left .services-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 60px;
+  gap: .75rem;
+  margin-bottom: 3.75rem;
 }
 .services-left .tag {
   background: var(--light-gray);
-  border-radius: 6px;
-  padding: 6px 12px;
+  border-radius: .375rem;
+  padding: .375rem .75rem;
   text-align: center;
-  font-size: 14px;
+  font-size: .875rem;
   font-weight: 500;
   color: var(--bk);
 }
@@ -746,29 +746,29 @@ section.services {
 Section.recruit {
   width: 100%;
   background: var(--neutral-50);
-  padding: 240px 178px;
+  padding: 15rem 11.125rem;
 }
 Section.recruit h5 {
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
   color: var(--gray);
 }
 .benefits-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  margin-bottom: 60px;
+  gap: .75rem;
+  margin-bottom: 3.75rem;
   width: 100%;
 }
 
 .benefit-item {
   background: var(--wh);
-  border: 1px solid var(--border-gray);
-  border-radius: 6px;
-  padding: 20px 40px;
+  border: .0625rem solid var(--border-gray);
+  border-radius: .375rem;
+  padding: 1.25rem 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 150px;
+  min-height: 9.375rem;
   max-width: 100%;
 }
 .benefit-item:hover {
@@ -782,31 +782,31 @@ Section.recruit h5 {
   font-size: var(--h6-size);
   font-weight: var(--h6-weight);
   color: var(--bk);
-  letter-spacing: -0.54px;
+  letter-spacing: -0.0338rem;
   transition: .3s ease;
 }
 .benefit-title img {
-  width: 24px;
-  height: 24px;
-  margin-bottom: 12px;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: .75rem;
 }
 .recruitment-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: .75rem;
   width: 100%;
 }
 
 .recruitment-card {
   background: #222222;
-  border-radius: 6px;
-  padding: 30px 40px;
+  border-radius: .375rem;
+  padding: 1.875rem 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: 1.25rem;
   color: white;
-  min-height: 290px;
+  min-height: 18.125rem;
   width: 100%;
 }
 
@@ -814,65 +814,65 @@ Section.recruit h5 {
   font-size: var(--body02-size);
   font-weight: var(--body02-weight);
   color: var(--gray);
-  letter-spacing: -0.42px;
+  letter-spacing: -0.0262rem;
 }
 
 .card-heading {
   font-size: var(--h5-size);
   font-weight: var(--h5-weight);
   color: var(--point);
-  letter-spacing: -0.72px;
+  letter-spacing: -0.045rem;
 }
 
 .card-content {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: white;
   line-height: 1.6;
-  letter-spacing: -0.48px;
+  letter-spacing: -0.03rem;
 }
 
 .card-footer {
-  font-size: 14px;
+  font-size: .875rem;
   font-weight: 500;
   color: var(--gray);
-  letter-spacing: -0.42px;
+  letter-spacing: -0.0262rem;
 }
 
 /* ==================== Contact Section ==================== */
 .contact h5 {
-  margin-top: 120px;
+  margin-top: 7.5rem;
   color: var(--gray);
 }
 
 .contact-info {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
-  padding: 0 30px;
-  margin-bottom: 40px;
+  gap: 1.875rem;
+  padding: 0 1.875rem;
+  margin-bottom: 2.5rem;
 }
 
 .contact-value {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--gray);
-  letter-spacing: -0.48px;
+  letter-spacing: -0.03rem;
 }
 .contact-value::before {
   content: attr(data-attr);
   display: flex;
   flex-direction: column;
-  font-size: 14px;
+  font-size: .875rem;
   font-weight: 600;
   color: var(--primary);
-  padding-bottom: 12px;
+  padding-bottom: .75rem;
 }
 
 .map-container {
   width: 100%;
   aspect-ratio: 1563 / 537;
-  border-radius: 6px;
+  border-radius: .375rem;
   overflow: hidden;
   background: #eaeaea;
 }
@@ -881,10 +881,10 @@ Section.recruit h5 {
 .footer {
   background-color: var(--primary);
   color: white;
-  padding: 20px 10px;
+  padding: 1.25rem .625rem;
   text-align: center;
-  font-size: 14px;
+  font-size: .875rem;
   font-weight: 500;
-  letter-spacing: -0.42px;
+  letter-spacing: -0.0262rem;
 }
 
