@@ -83,19 +83,18 @@
   /* section */
   section.about {
     flex-direction: column;
-    min-height: auto;
     min-height: 100%;
     padding: 2vw 2vw;
     background-size: cover;
   }
   section.partners{
     flex-direction: column;
-    min-height: 100%;
-    max-height: 150dvh;
+    height: 100dvh;
+    overflow: visible;
   }
   section.uipath,
   section.business {
-    min-height: 140dvh;
+    height: 110dvh;
   }
   section.uipath-process {
     height: auto;
@@ -138,13 +137,18 @@
   }
   .partners-left, .partners-right{
     width: 100%;
-    padding: 6vw 2vw;
+    padding: 20vw 2vw;
   }
   .partners-left {
     order: 1;
-    /* position: static; */
+    position: static;
     height: 100%;
+    padding: 20vw 2vw;
     background-color: var(--light-gray);
+    box-sizing: border-box;
+  }
+  .partners-left .partners-content {
+    bottom: 0;
   }
   .logo-box img {
     max-height: 25px;
