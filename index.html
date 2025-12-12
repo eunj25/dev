@@ -19,7 +19,15 @@
     <div class="logo">
       <img src="/images/header_logo.svg" width="140px" alt="NTAS Logo">
     </div>
-    <nav class="nav">
+
+    <div class="hamburger" id="hamburger-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <nav class="nav" id="nav-menu">
       <a href="#about" class="nav-link">ABOUT</a>
       <a href="#business" class="nav-link">BUSINESS</a>
       <a href="#recruit" class="nav-link">RECRUIT</a>
@@ -589,12 +597,42 @@
 
   <script>
 
-    document.addEventListener("DOMContentLoaded", () => {
-      const header = document.querySelector(".header");
-      const hero = document.querySelector(".hero");
+  document.addEventListener("DOMContentLoaded", () => {
+    // 1. 공통 요소 선택
+    const header = document.querySelector(".header");
+    const hamburger = document.getElementById("hamburger-btn"); // 햄버거 버튼 ID
+    const navMenu = document.getElementById("nav-menu"); // 메뉴 영역 ID
+    const overlay = document.getElementById("menu-overlay");
 
-      if (!header || !hero) return;
+    // ------------------------------------------------------
+    // [PART 1] 모바일 햄버거 메뉴 기능
+    // ------------------------------------------------------
+    if (hamburger && navMenu) {
+      hamburger.addEventListener("click", () => {
+        // 메뉴 슬라이드 및 아이콘 애니메이션 토글
+        navMenu.classList.toggle("active");
+        hamburger.classList.toggle("active");
+        overlay.classList.toggle("active");
+      });
 
+      // (옵션) 메뉴 링크 클릭 시 자동으로 닫기
+      const navLinks = document.querySelectorAll(".nav-link");
+      navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("active");
+          hamburger.classList.remove("active");
+          overlay.classList.remove("active");
+        });
+      });
+    }
+
+    // ------------------------------------------------------
+    // [PART 2] 스크롤 시 헤더 스타일 변경 기능
+    // ------------------------------------------------------
+    const hero = document.querySelector(".hero");
+
+    // hero 섹션이 존재할 때만 스크롤 로직 실행 (서브페이지 오류 방지)
+    if (header && hero) {
       const changePoint = hero.offsetHeight * 0.5; // hero의 중간 지점
 
       window.addEventListener("scroll", () => {
@@ -606,7 +644,8 @@
           header.classList.remove("scroll-active");
         }
       });
-    });
+    }
+  });
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
