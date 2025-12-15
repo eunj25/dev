@@ -311,6 +311,12 @@ section.about .value-circle:hover {
   box-shadow: 0 .6875rem 1.25rem rgba(83, 5, 207, 0.5);
   transform: scale(1.02);
 }
+section.about .value-circle .value-text {
+  transition: .3s ease;
+}
+section.about .value-circle:hover .value-text {
+  transform: scale(1.2);
+}
 section.about .value-circle strong {
   color: var(--primary);
   font-weight: 700;
@@ -380,12 +386,13 @@ section.partners .section-tag {
 }
 .logo-box img {
   opacity: 0.6;
-  transition: opacity 0.3s ease;
+  transition: 0.3s ease;
   width: auto;
   max-height: 2.8125rem;
 }
 .logo-box img:hover {
   opacity: 1;
+  transform: scale(1.07);
 }
 
 
