@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 3.75rem;
+  height: 4.35rem;
   background-color: transparent;
 
   display: flex;
@@ -17,10 +17,15 @@
   z-index: 100;
   transition: background-color .3s ease, backdrop-filter .3s ease;
 }
+header .logo a {
+  display: inline-block;
+  width: 9rem;
+}
 header .logo {
   display: flex;
   align-items: center;
-  width: 8.75rem;
+  /* width: 9rem; */
+  height: auto;
 }
 .nav {
   display: flex;
@@ -30,7 +35,7 @@ header .logo {
 .nav-link {
   color: var(--bk);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 500;
   cursor: pointer;
   transition: color 0.25s ease;
@@ -258,6 +263,7 @@ section.hero .logo {
 /* ==================== About Section ==================== */
 section.about {
   display: flex;
+  align-items: center;
   height: 100vh;
   background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
   background: url(/images/about_back_imges.png) center bottom no-repeat;
@@ -324,12 +330,13 @@ section.about .value-circle strong {
 
 section.about .about-right {
   width: 44.5%;
-  position: relative;
+  padding: 4.875rem;
+  /* position: relative; */
 }
 section.about .about-content {
-  position: absolute;
+  /* position: absolute;
   bottom: 16%;
-  padding: 4.875rem;
+  padding: 4.875rem; */
 }
 section.about .section-tag {
   background-color: var(--wh)!important;
@@ -350,13 +357,18 @@ section.partners {
 .partners-left {
   width: 54%;
   background-color: var(--light-gray);
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  /* align-content: center; */
+  /* justify-content: center; */
+  align-items: center;
+  padding-left: 11.25rem;
 }
 .partners-left .partners-content {
-  position: absolute;
+  /* position: absolute;
   padding-left: 11.125rem;
   padding-right: 4.875rem;
-  bottom: 20%;
+  bottom: 20%; */
 }
 section.partners .section-tag {
   background-color: var(--primary);
@@ -524,9 +536,27 @@ section.ntas-uipath .process-item {
   display: flex;
   flex-direction: column;
   gap: 3.75rem;
+  position: relative;
+  z-index: 2;
+}
+section.ntas-uipath .process-item::before {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translateY(-50%);
+  content: '';
+  width: 295px;
+  height: 280px;
+  background: url(/images/uipath_arrow.png) center no-repeat;
+  z-index: 1;
+}
+section.ntas-uipath .process-item:nth-child(3):before {
+  display: none;
 }
 section.ntas-uipath .item-image {
-  min-height: 17.8125rem;
+  height: 17.8125rem;
+  position: relative;
+  z-index: 3;
 }
 section.ntas-uipath .item-image img {
   height: 100%;
@@ -536,6 +566,8 @@ section.ntas-uipath .item-content {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  position: relative;
+  z-index: 3;
 }
 section.ntas-uipath .item-title {
   font-weight: 700;
@@ -704,7 +736,7 @@ section.business .business-content:nth-child(3) .card-title {
 section.business .business-content:nth-child(3) .card-title::after {
   position:absolute;
   top: 10%;
-  right: -3.4375rem;
+  right: -35px;
   transform: translate(-50%);
   z-index: 3;
 
@@ -729,10 +761,13 @@ section.business .business-content:nth-child(4) .service-card{
 }
 
 .card-title {
-  font-size: var(--h6-size);
+  font-size: 20px;
   font-weight: var(--h6-weight);
   color: var(--bk);
   letter-spacing: -0.0338rem;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .card-desc {
@@ -816,12 +851,59 @@ Section.recruit h5 {
   background: var(--wh);
   border: .0625rem solid var(--border-gray);
   border-radius: .375rem;
-  padding: 1.25rem 2.5rem;
+  padding: 1.25rem 16px;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 9.375rem;
+  height: 160px;
   max-width: 100%;
+
+  position: relative;
+  overflow: hidden; 
+}
+.benefit-box {
+  position: absolute;
+  bottom: -50%;
+  transition: .3s ease;
+  width: 90%;
+  height: 80%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.benefit-title {
+  font-size: var(--h6-size);
+  font-weight: var(--h6-weight);
+  color: var(--bk);
+  letter-spacing: -0.0338rem;
+  transition: .3s ease;
+  margin-bottom: .2vw;
+
+  display: flex;
+  align-items: center;
+  gap: .5vw;
+}
+.benefit-title img {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: .3s ease;
+  display: block;
+}
+.benefit-desc {
+  width: 100%;
+  background: linear-gradient(to top,#fff 80%,rgba(255, 255, 255, 0));
+  color: var(--gray);
+  opacity: 0;
+
+  transition: transform 0.5s ease, opacity 0.35s ease;
+}
+
+/* hover 시 */
+.benefit-item:hover .benefit-box {
+  bottom: 5%;
 }
 .benefit-item:hover {
   border-color: var(--primary);
@@ -830,18 +912,11 @@ Section.recruit h5 {
 .benefit-item:hover .benefit-title {
   color: var(--primary);
 }
-.benefit-title {
-  font-size: var(--h6-size);
-  font-weight: var(--h6-weight);
-  color: var(--bk);
-  letter-spacing: -0.0338rem;
-  transition: .3s ease;
-}
-.benefit-title img {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-bottom: .75rem;
-}
+.benefit-item:hover .benefit-desc {
+  opacity: 1;
+} 
+
+
 .recruitment-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -932,11 +1007,35 @@ Section.recruit h5 {
 /* ==================== Footer ==================== */
 .footer {
   background-color: var(--primary);
+  /* background-color: var(--bk); */
   color: white;
-  padding: 1.25rem .625rem;
+  padding: 2vw 10vw;
   text-align: center;
   font-size: .875rem;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: -0.0262rem;
+  text-align: left;
 }
+.footer > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+}
+.footer > div img {
+  width: 160px;
+}
+.footer .info-box {
+  font-size: var(--body02-size);
+  margin-bottom: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.footer .info {
+  margin-right: 1vw;
 
+}
+.footer .info span {
+  font-weight: 500;
+  margin-right: .4vw;
+}
