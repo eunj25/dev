@@ -213,8 +213,10 @@
   
   .thumb {
     position: relative;
-    width: 835px;
-    height: 460px;
+    /* width: 835px;
+    height: 460px; */
+    width: clamp(320px, 45vw, 835px);
+    height: clamp(176px, 25vw, 460px);
     z-index: 2;
     overflow: hidden;
   }
