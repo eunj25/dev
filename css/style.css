@@ -698,6 +698,8 @@ section.business .item-desc {
   font-size: 1.125rem;
 }
 
+
+
 /* ======== service-cards ======== */
 .service-cards {
   display: flex;
@@ -823,11 +825,59 @@ section.services {
 .services-right .services-image {
   position: absolute;
   top: 55%;
-  left: 50%;
+  left: 60%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 100%;
+}
+.services-image {
+  position: relative;
 }
 
+/* 모니터 화면 영역 */
+.monitor-screen {
+  position: absolute;
+  /* top: 212px;
+  left: 55px; */
+  top: 46%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  width: 736px;
+  height: 413px;
+
+  overflow: hidden;
+}
+
+/* 슬라이드 트랙 */
+.banner-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.6s ease;
+}
+
+/* 배너 */
+.banner {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 32px;
+  font-weight: bold;
+  background: #f5f5f5;
+}
+
+.banner-track .banner:nth-last-child(1) {
+  background: url(/images/mask_group03.png) center/cover no-repeat;
+}
+.banner-track .banner:nth-last-child(2) {
+  background: url(/images/mask_group02.png) center/cover no-repeat;
+}
+.banner-track .banner:nth-last-child(3) {
+  background: url(/images/mask_group01.png) center/cover no-repeat;
+}
 
 /* ==================== recruit Section ==================== */
 Section.recruit {

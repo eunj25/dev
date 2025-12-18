@@ -512,6 +512,15 @@
       <div class="services-image">
         <img src="/images/services_365.png" alt="지능형비서365플랫폼">
       </div>
+
+      <!-- 모니터 화면 영역 -->
+      <div class="monitor-screen">
+        <div class="banner-track">
+          <div class="banner"></div>
+          <div class="banner"></div>
+          <div class="banner"></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -770,6 +779,7 @@
     document.querySelectorAll('section.services .btn').forEach(btn => {
       btn.addEventListener('click', function() {
         alert('알비서 서비스로 이동합니다.');
+        window.open('https://www.rtary.com/', '_blank');
       });
     });
 
@@ -836,6 +846,19 @@
       });
 
     });
+
+
+    // banner - track 슬라이더
+    const track = document.querySelector('.banner-track');
+    const banners = document.querySelectorAll('.banner');
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % banners.length;
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }, 3000);
+
+
 
     // =======================
     // Scroll Reveal Interaction
