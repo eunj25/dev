@@ -436,7 +436,8 @@ section.uipath::after {
 .uipath-box.slide {
   position: absolute;
   inset: 0;
-  width: calc(100% - 178px);
+  /* width: calc(100% - 178px); */
+  width: calc(100% - clamp(48px, 8vw, 178px));
   left: clamp(48px, 8vw, 178px);
   /* left: 178px; */
   bottom: 10%;
@@ -616,7 +617,6 @@ section.business .business-slider {
   align-items: center;
 }
 section.business .business-slider .dots {
-  left: 200px;
   bottom: 15%;
 }
 
@@ -660,7 +660,8 @@ section.business .business-box {
   position: absolute;
   left: clamp(48px, 8vw, 178px);
   bottom: 15%;
-  width: calc(100% - 178px);
+  /* width: calc(100% - 178px); */
+  width: calc(100% - clamp(48px, 8vw, 178px));
   display: flex;
   justify-content: space-between;
   padding: 0 80px 0 20px;
