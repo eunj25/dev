@@ -146,7 +146,7 @@ header .logo {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-left: clamp(48px, 8vw, 178px);
+  margin: 0 clamp(48px, 8vw, 178px);
 }
 section.hero .logo {
   width: 247px;
@@ -299,7 +299,7 @@ section.about .logo-center {
 }
 section.about .value-circle {
   text-align: center;
-  width: clamp(200px, 22vw, 384px);
+  width: clamp(200px, 28vw, 384px);
   aspect-ratio: 1 / 1;
 
   border-radius: 50%;
@@ -309,7 +309,7 @@ section.about .value-circle {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: var(--h5-size);
   font-weight: 600;
   color: var(--bk);
   transition: .3s ease;
@@ -439,12 +439,9 @@ section.uipath::after {
 .uipath-box.slide {
   position: absolute;
   inset: 0;
-  /* width: calc(100% - 178px); */
   width: calc(100% - clamp(48px, 8vw, 178px));
   left: clamp(48px, 8vw, 178px);
-  /* left: 178px; */
   bottom: 10%;
-  /* bottom: clamp(48px, 8vw, 30px); */
 
   display: flex;
   align-items: self-end;
@@ -460,7 +457,6 @@ section.uipath::after {
   position: relative;
   z-index: 2;
   max-width: 54%;
-  /* margin-bottom: 180px; */
   margin-bottom: clamp(48px, 8vw, 178px);
 }
 .uipath-services.content .item-title {
@@ -547,12 +543,15 @@ section.ntas-uipath .process-item:nth-child(3):before {
   display: none;
 }
 section.ntas-uipath .item-image {
-  height: 285px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   position: relative;
   z-index: 3;
 }
 section.ntas-uipath .item-image img {
+  width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 section.ntas-uipath .item-content {
@@ -723,7 +722,7 @@ section.business .business-content:nth-child(3) .service-cards {
 section.business .business-content:nth-child(3) .service-card{
   background: rgba(255, 255, 255, 0.58);
   border: 1px solid var(--wh);
-  height: 300px;
+  height: clamp(200px, 30vw, 300px);
 }
 section.business .business-content:nth-child(3) .card-title {
   color: var(--primary);

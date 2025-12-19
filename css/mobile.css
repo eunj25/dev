@@ -4,16 +4,224 @@
 
 
 /* ============ Tablet ============  */
-@media (max-width: 64rem) {
+@media (max-width: 1024px) {
 
   html {
     font-size: 68%;
   }
 
+  /* ========= about section */
+  section.about {
+    flex-direction: column;
+    height: 100%;
+    padding: clamp(16px, 2vw, 48px);
+    background-size: cover;
+    background: url(/images/about_back_imges.png) right bottom no-repeat;
+  }
+  .about-left {
+    width: 100%;
+    padding: 20vw 0 0 0;
+  }
+  section.about .about-right {
+    width: 100%;
+    padding: clamp(80px, 20vw, 240px) clamp(16px, 2vw, 40px);
+  }
+  section.about .tagline-box {
+    width: 60%;
+  }
+  section.about .about-box {
+    position: static;
+    transform: none;
+  }
+  section.about .about-content {
+    padding: 0;
+  }
+  section.about .value-circle {
+    font-size: var(--h5-size);
+  }
+
+  /* ========= partners section */
+  section.partners {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+  .partners-left .partners-content {
+    padding: 0;
+  }
+  .partners-left,
+  .partners-right {
+    width: 100%;
+    padding: clamp(80px, 20vw, 240px) clamp(16px, 4vw, 40px);
+  }
+  .partners-left {
+    order: 1;
+    position: static;
+    height: 100%;
+    background-color: var(--light-gray);
+    box-sizing: border-box;
+  }
+  .partners-left .partners-content {
+    bottom: 0;
+  }
+  .logo-box img {
+    max-height: 25px;
+  }
+  /* ========= uipath section */
+  section.uipath {
+    height: 150dvh;
+  }
+  .uipath-header {
+    position: static;
+    padding: clamp(80px, 20vw, 240px) clamp(16px, 4vw, 40px);
+  }
+  section.uipath::after {
+    display: none;
+  }
+  .slider {
+    overflow: visible;
+    height: 100%;
+  }
+  .uipath-box.slide {
+    flex-direction: column;
+    left: 0;
+    width: 100%;
+    padding: clamp(16px, 4vw, 40px);
+    align-items: start;
+    justify-content: start;
+    bottom: 5%;
+    gap: 10vw;
+    height: 100%;
+  }
+  .uipath-services.content {
+    max-width: 100%;
+    margin-bottom: 180px;
+  }
+  .thumb {
+    width: 100%;
+    height: auto;
+    order: -1;
+  }
+  .dots {
+    bottom: 40%;
+    left: 5vw;
+  }
+  section.ntas-uipath {
+    overflow: hidden;
+  }
+  section.uipath-process .process-box {
+    height: auto;
+  }
+  section.ntas-uipath .ntas-uipath-process {
+    flex-direction: column;
+    gap: 18vw;
+  }
+  section.ntas-uipath .process-item {
+    gap: 4vw;
+    width: 100%;
+    justify-content: space-between;
+  }
+  section.ntas-uipath .item-image {
+    width: 80%;
+  }
+  section.ntas-uipath .item-title {
+    font-size: var(--h4-size);
+  }
+  section.ntas-uipath .item-desc {
+    font-size: var(--h5-size);
+  }
+  section.ntas-uipath .process-item::before {
+    top: 80%;
+    left: 50%;
+  }
+
+  /* ========= business section */
+  section.business {
+    height: 150dvh;
+  }
+  .business-header {
+    top: 15%;
+    left: 5%;
+  }
+  section.business .business-box {
+    left: 5%;
+    bottom: 15%;
+    flex-direction: column;
+    padding: 0;
+    width: 90%;
+    box-sizing: border-box;
+  }
+  .service-cards {
+    width: 100%;
+    flex-direction: column;
+  }
+  .service-card {
+    padding: 4vw 2vw;
+  }
+  .card-desc {
+    font-size: 14px;
+  }
+  section.business .business-slider .dots {
+    left: 5%;
+    bottom: 10%;
+  }
+  section.business .business-content:nth-child(3) .service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  section.business .business-content:nth-child(3) .card-title::after {
+    top: 10%;
+    right: -32px;
+  }
+  /* ========= services section */
+  section.services {
+    flex-direction: column;
+    height: auto;
+  }
+  .services-left,
+  .services-right {
+    width: 100%;
+    padding: clamp(80px, 20vw, 240px) clamp(16px, 4vw, 40px);
+  }
+  .services-left .services-content {
+    padding-left: 0;
+  }
+  .services-right {
+    height: 50dvh;
+  }
+  .services-right .services-image {
+    top: 68%;
+    left: 50%;
+    width: 100%;
+  }
+  /* 모니터 화면 영역 */
+  .monitor-screen {
+    top: 52%;
+    left: 48.3%;
+    width: 84%;
+    height: 82%;
+  }
+  /* ========= recruit section */
+  Section.recruit {
+    padding: clamp(80px, 20vw, 240px) clamp(16px, 4vw, 40px);
+  }
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .recruitment-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+  }
+  .contact-info {
+    flex-direction: column;
+    padding: 0 4vw;
+  }
 }
 
 /* ============ MOBILE HEADER ============ */
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
 
   html {
     font-size: 62.5%;
@@ -85,7 +293,7 @@
   }
 
   .hero-content {
-    margin-left: 0;
+    margin: 0;
   }
 
   .hero-title {
@@ -133,15 +341,7 @@
     background-size: cover;
     background: url(/images/about_back_imges.png) right bottom no-repeat;
   }
-  section.partners{
-    flex-direction: column;
-    height: auto;
-    overflow: visible;
-  }
-  section.uipath,
-  section.business {
-    height: auto;
-  }
+
   section.uipath-process {
     height: auto;
     padding: 20vw 4vw;
@@ -149,60 +349,58 @@
   section.ntas-uipath {
     padding: 20vw 4vw;
   }
-  section.services {
-    flex-direction: column;
-    height: auto;
-  }
+
 
   /* ========= about section */
-  .about-left {
-    width: 100%;
+  /* .about-left {
     padding: 20vw 0 0 0;
   }
   section.about .about-right {
-    width: 100%;
     padding: 10vw 0 20vw 0;
-  }
+  } */
   section.about .tagline-box {
     width: 80%;
   }
-  section.about .about-box {
+  /* section.about .about-box {
     position: static;
     transform: none;
   }
   section.about .about-content {
     padding: 0;
-  }
-  section.about .value-circle {
-    font-size: var(--h5-size);
-  }
+  } */
 
   /* ========= partners section */
-  .partners-left .partners-content {
+  /* section.partners {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  } */
+  /* .partners-left .partners-content {
     padding: 0; 
     bottom: 5%;
-  }
-  .partners-left, .partners-right{
+  } */
+  /* .partners-left, .partners-right{
     width: 100%;
-    padding: 20vw 2vw;
   }
   .partners-left {
     order: 1;
     position: static;
     height: 100%;
-    padding: 20vw 2vw;
     background-color: var(--light-gray);
     box-sizing: border-box;
-  }
-  .partners-left .partners-content {
+  } */
+  /* .partners-left .partners-content {
     bottom: 0;
   }
   .logo-box img {
     max-height: 25px;
-  }
+  } */
 
   /* ========= uipath section */
-  .uipath-header {
+  section.uipath {
+    height: 120dvh;
+  }
+  /* .uipath-header {
     position: static;
     padding: 20vw 4vw;
   }
@@ -261,10 +459,13 @@
   section.ntas-uipath .process-item::before {
     top: 80%;
     left: 50%;
-  }
+  } */
 
   /* ========= business section */
-  .business-header {
+  section.business {
+    height: 150dvh;
+  }
+  /* .business-header {
     top: 15%;
     left: 5%;
   }
@@ -298,9 +499,9 @@
   section.business .business-content:nth-child(3) .card-title::after {
     top: 10%;
     right: -32px;
-  }
+  } */
   /* ========= services section */
-  .services-left,
+  /* .services-left,
   .services-right {
     width: 100%;  
     padding: 20vw 4vw;
@@ -310,7 +511,7 @@
   }
   .services-right {
     height: 50dvh;
-  }
+  } */
   .services-right .services-image {
     top: 68%;
     left: 50%;
@@ -318,28 +519,25 @@
   }
   /* 모니터 화면 영역 */
   .monitor-screen {
-    top: 55%;
+    top: 58%;
     left: 48.5%;
     width: 84%;
-    height: 64%;
+    height: 50%;
   }
   /* ========= recruit section */
-  Section.recruit {
+  /* Section.recruit {
     padding: 20vw 4vw;
   }
   .benefits-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .recruitment-cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 12px;
-    width: 100%;
-  }
 
   .contact-info {
     flex-direction: column;
     padding: 0 4vw;
+  } */
+  .recruitment-cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
