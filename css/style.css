@@ -286,6 +286,7 @@ section.about .about-grid {
   display: flex;
   align-items: center;
   margin-bottom: 42px;
+  gap: clamp(3px, 4vw, 6px);
 }
 section.about .logo-center {
   position: absolute;
@@ -293,11 +294,14 @@ section.about .logo-center {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  width: clamp(10px, 12vw, 94px);
+  aspect-ratio: 1 / 1;
 }
 section.about .value-circle {
   text-align: center;
-  width: 384px;
-  height: 384px;
+  width: clamp(200px, 22vw, 384px);
+  aspect-ratio: 1 / 1;
+
   border-radius: 50%;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9));
   border: 2px solid var(--border-gray);
