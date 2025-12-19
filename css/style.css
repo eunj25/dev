@@ -24,7 +24,6 @@ header .logo a {
 header .logo {
   display: flex;
   align-items: center;
-  /* width: 144px; */
   height: auto;
 }
 .nav {
@@ -515,7 +514,8 @@ section.ntas-uipath .ntas-feature {
 section.ntas-uipath .ntas-uipath-process {
   display: flex;
   justify-content: space-between;
-  gap: 180px;
+  /* gap: 180px; */
+  gap: clamp(10px, 5vw, 180px);
 }
 section.ntas-uipath .process-item {
   flex: 1;
