@@ -204,7 +204,7 @@
   /* ========= uipath section */
   .uipath-header {
     position: static;
-    padding: 16vw 4vw;
+    padding: 20vw 4vw;
   }
 
   section.uipath::after {
@@ -244,7 +244,6 @@
     gap: 18vw;
   }
   section.ntas-uipath .process-item {
-    /* flex-direction: row; */
     gap: 4vw;
     width: 100%;
     justify-content: space-between;
@@ -253,17 +252,15 @@
     width: 80%;
   }
   section.ntas-uipath .item-title {
-    font-size: 28.8px;
+    font-size: var(--h4-size);
   }
   section.ntas-uipath .item-desc {
-    font-size: 24px;
+    font-size: var(--h5-size);
   }
 
   section.ntas-uipath .process-item::before {
     top: 80%;
-    left: 55%;
-    width: 18.4375rem;
-    height: 17.5rem;
+    left: 50%;
   }
 
   /* ========= business section */
