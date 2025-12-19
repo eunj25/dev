@@ -832,12 +832,16 @@ section.services {
 /* 모니터 화면 영역 */
 .monitor-screen {
   position: absolute;
+  /* top: 46%;
+  left: 58.2%;
+  width: 46rem;
+  height: 25.8125rem; */
   top: 46%;
   left: 58.2%;
+  width: 84%;
+  height: 46%;
+  
   transform: translate(-50%, -50%);
-  width: 46rem;
-  height: 25.8125rem;
-
   overflow: hidden;
 }
 .banner-track {

@@ -314,10 +314,15 @@
   .services-right .services-image {
     top: 68%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
   }
-
+  /* 모니터 화면 영역 */
+  .monitor-screen {
+    top: 55%;
+    left: 48.5%;
+    width: 84%;
+    height: 64%;
+  }
   /* ========= recruit section */
   Section.recruit {
     padding: 20vw 4vw;
