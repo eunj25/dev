@@ -6,7 +6,7 @@
 /* ============ Tablet ============  */
 @media (max-width: 1300px) {
 section.about .value-circle {
-  width: clamp(11.25rem, 34vw, 18.75rem);
+  width: clamp(180px, 34vw, 300px);
 }
   section.uipath {
     height: 120dvh;
@@ -381,7 +381,7 @@ section.about .value-circle {
     width: 100%;
   }
   section.business .business-content:nth-child(3) .service-card {
-    height: clamp(19.375rem, 30vw,22rem);
+    height: clamp(19.375rem, 30vw, 22rem);
   }
   /* 모니터 화면 영역 */
   .monitor-screen {
@@ -397,7 +397,7 @@ section.about .value-circle {
   }
   .benefit-item {
     justify-content: flex-start;
-    height: clamp(224px, 20vw, 240px);
+    height: clamp(14rem, 20vw, 15rem);
   }
   .recruitment-cards {
     grid-template-columns: repeat(1, 1fr);
