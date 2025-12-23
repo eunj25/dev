@@ -192,6 +192,9 @@ section.about .value-circle {
   .service-card {
     padding: 4vw 2vw;
   }
+  .card-title {
+    margin-bottom: 4vw;
+  }
   .card-desc {
     font-size: clamp(13px, 1vw, 14px);
   }
