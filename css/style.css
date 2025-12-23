@@ -671,7 +671,7 @@ section.business .business-box {
   padding: 0 80px 0 20px;
 }
 
-section.business .item-title{
+section.business .item-title {
   transform: translateY(20px);
   opacity: 0;
   transition: .6s ease;
@@ -756,7 +756,8 @@ section.business .business-content:nth-child(4) .service-card{
 }
 
 .card-title {
-  font-size: 1.25rem;
+  /* font-size: 20px; */
+  font-size: clamp(16px, 1vw, 20px);
   font-weight: var(--h6-weight);
   color: var(--bk);
   letter-spacing: -0.5408px;

@@ -6,7 +6,7 @@
 /* ============ Tablet ============  */
 @media (max-width: 1300px) {
 section.about .value-circle {
-  width: clamp(180px, 34vw, 300px);
+  width: clamp(11.25rem, 34vw, 18.75rem);
 }
   section.uipath {
     height: 120dvh;
@@ -16,10 +16,10 @@ section.about .value-circle {
     grid-template-columns: repeat(3, 1fr);
   }
   section.business .business-content:nth-child(3) .service-card {
-    height: clamp(150px, 30vw, 230px);
+    height: clamp(9.375rem, 30vw, 14.375rem);
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
 
   .hero-image-box {
     right: 20%;
@@ -28,7 +28,7 @@ section.about .value-circle {
     left: auto;
   }
   .hero-images img:nth-child(1) {
-    right: 206px;
+    right: 12.875rem;
   }
   .hero-images img:nth-child(2) {
     right: 22%;
@@ -41,7 +41,7 @@ section.about .value-circle {
   section.about {
     flex-direction: column;
     height: 100%;
-    padding: clamp(16px, 2vw, 48px);
+    padding: clamp(1rem, 2vw, 3rem);
     background: url(/images/about_back_imges.png) cover right no-repeat ;
   }
   .about-left {
@@ -50,7 +50,7 @@ section.about .value-circle {
   }
   section.about .about-right {
     width: 100%;
-    padding: clamp(5rem, 20vw, 15rem) clamp(1rem, 2vw, 2.5rem);
+    padding: clamp(80px, 20vw, 240px) clamp(16px, 2vw, 40px);
   }
   section.about .tagline-box {
     width: 60%;
@@ -78,7 +78,7 @@ section.about .value-circle {
   .partners-left,
   .partners-right {
     width: 100%;
-    padding: clamp(5rem, 20vw, 15rem) clamp(1rem, 4vw, 2.5rem);
+    padding: clamp(80px, 20vw, 240px) clamp(16px, 4vw, 40px);
   }
   .partners-left {
     order: 1;
@@ -91,7 +91,7 @@ section.about .value-circle {
     bottom: 0;
   }
   .logo-box img {
-    max-height: 1.5625rem;
+    max-height: 25px;
   }
   /* ========= uipath section */
   section.uipath {
@@ -99,7 +99,7 @@ section.about .value-circle {
   }
   .uipath-header {
     position: static;
-    padding: clamp(5rem, 20vw, 15rem) clamp(1rem, 4vw, 2.5rem);
+    padding: clamp(80px, 20vw, 240px) clamp(16px, 4vw, 40px);
   }
   section.uipath::after {
     display: none;
@@ -112,7 +112,7 @@ section.about .value-circle {
     flex-direction: column;
     left: 0;
     width: 100%;
-    padding: clamp(1rem, 4vw, 2.5rem);
+    padding: clamp(16px, 4vw, 40px);
     align-items: start;
     justify-content: start;
     bottom: 5%;
@@ -121,7 +121,7 @@ section.about .value-circle {
   }
   .uipath-services.content {
     max-width: 100%;
-    margin-bottom: 11.25rem;
+    margin-bottom: 180px;
   }
   .thumb {
     width: 100%;
@@ -134,7 +134,7 @@ section.about .value-circle {
   }
   section.uipath-process {
     height: auto;
-    padding: clamp(5rem, 20vw, 15rem) clamp(1rem, 4vw, 2.5rem);
+    padding: clamp(80px, 20vw, 240px) clamp(16px, 4vw, 40px);
   }
   section.uipath-process .process-box {
     height: auto;
@@ -142,7 +142,7 @@ section.about .value-circle {
   /* ========= ntas uipath section */
   section.ntas-uipath {
     overflow: hidden;
-    padding: clamp(5rem, 20vw, 15rem) clamp(1rem, 4vw, 2.5rem);
+    padding: clamp(80px, 20vw, 240px) clamp(16px, 4vw, 40px);
   }
   section.ntas-uipath .ntas-uipath-process {
     flex-direction: column;
@@ -182,6 +182,8 @@ section.about .value-circle {
     padding: 0;
     width: 90%;
     box-sizing: border-box;
+
+    gap: 4vw;
   }
   .service-cards {
     width: 100%;
@@ -191,7 +193,7 @@ section.about .value-circle {
     padding: 4vw 2vw;
   }
   .card-desc {
-    font-size: .875rem;
+    font-size: clamp(13px, 1vw, 14px);
   }
   section.business .business-slider .dots {
     left: 5%;
@@ -199,11 +201,11 @@ section.about .value-circle {
   }
   section.business .business-content:nth-child(3) .service-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   section.business .business-content:nth-child(3) .card-title::after {
     top: 10%;
-    right: -2rem;
+    right: -32px;
   }
   /* ========= services section */
   section.services {
@@ -213,7 +215,7 @@ section.about .value-circle {
   .services-left,
   .services-right {
     width: 100%;
-    padding: clamp(5rem, 20vw, 15rem) clamp(1rem, 4vw, 2.5rem);
+    padding: clamp(80px, 20vw, 240px) clamp(16px, 4vw, 40px);
   }
   .services-left .services-content {
     padding-left: 0;
@@ -235,7 +237,7 @@ section.about .value-circle {
   }
   /* ========= recruit section */
   Section.recruit {
-    padding: clamp(5rem, 20vw, 15rem) clamp(1rem, 4vw, 2.5rem);
+    padding: clamp(80px, 20vw, 240px) clamp(16px, 4vw, 40px);
   }
   .benefits-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -243,7 +245,7 @@ section.about .value-circle {
   .recruitment-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: .75rem;
+    gap: 12px;
     width: 100%;
   }
   .contact-info {
@@ -253,19 +255,19 @@ section.about .value-circle {
 }
 
 /* ============ MOBILE HEADER ============ */
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
 
   html {
     font-size: 62.5%;
   }
   .header {
     width: 100%;
-    height: 4.375rem;
-    padding: 0 1.25rem;
+    height: 70px;
+    padding: 0 20px;
   }
 
   header .logo {
-    width: 6.875rem;
+    width: 110px;
   }
 
   .hamburger {
@@ -277,13 +279,13 @@ section.about .value-circle {
     position: fixed;
     top: 0;
     left: 0;
-    width: 18.75rem;
+    width: 300px;
     height: 100vh;
     background-color: #fff;
     flex-direction: column;
     align-items: flex-start;
-    padding: 80px 20px;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 5rem 1.25rem;
+    box-shadow: .125rem 0 .625rem rgba(0, 0, 0, 0.1);
 
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
@@ -296,14 +298,14 @@ section.about .value-circle {
 
   .nav-link {
     font-size: var(--h5-size);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     width: 100%;
-    border-bottom: 1px solid #f0f0f0;
-    padding-bottom: 10px;
+    border-bottom: .0625rem solid #f0f0f0;
+    padding-bottom: .625rem;
   }
 
   .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 6px);
+    transform: rotate(45deg) translate(.3125rem, .375rem);
     background-color: #5E00FF;
   }
 
@@ -312,13 +314,13 @@ section.about .value-circle {
   }
 
   .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -6px);
+    transform: rotate(-45deg) translate(.3125rem, -0.375rem);
     background-color: #44E8AB;
   }
 }
 
 /* ============ MOBILE ============ */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .hero {
     height: 100vh;
     padding: 0 4vw;
@@ -333,8 +335,8 @@ section.about .value-circle {
   }
 
   .hero-image-box {
-    width: clamp(15rem, 70vw, 20rem);
-    height: clamp(15rem, 70vw, 20rem);
+    width: clamp(240px, 70vw, 320px);
+    height: clamp(240px, 70vw, 320px);
 
     right: 50%;
     transform: translateX(50%);
@@ -345,15 +347,15 @@ section.about .value-circle {
 
   /* hero 안에 둥둥 뜨는 이미지 축소 */
   .hero-images img:nth-child(1) {
-    width: 1.625rem;
+    width: 26px;
   }
 
   .hero-images img:nth-child(2) {
-    width: 3rem;
+    width: 48px;
   }
 
   .hero-images img:nth-child(3) {
-    width: 4rem;
+    width: 64px;
   }
   
   /* ========= about section */
@@ -375,6 +377,9 @@ section.about .value-circle {
     left: 50%;
     width: 100%;
   }
+  section.business .business-content:nth-child(3) .service-card {
+    height: clamp(19.375rem, 30vw,22rem);
+  }
   /* 모니터 화면 영역 */
   .monitor-screen {
     top: 58%;
@@ -389,7 +394,7 @@ section.about .value-circle {
   }
   .benefit-item {
     justify-content: flex-start;
-    height: clamp(14rem, 20vw, 15rem);
+    height: clamp(224px, 20vw, 240px);
   }
   .recruitment-cards {
     grid-template-columns: repeat(1, 1fr);
@@ -402,23 +407,23 @@ section.about .value-circle {
 }
 
 /* ============ MOBILE GO TO TOP ============ */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   #goTop {
     right: 5%;
     bottom: 5%;
-    width: 3.625rem;
-    height: 3.625rem;
-    border-radius: 1rem;
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
 
     background: rgba(255, 255, 255, 0.35);
-    backdrop-filter: blur(.875rem);
+    backdrop-filter: blur(14px);
 
-    box-shadow: 0 .375rem 1.75rem rgba(0, 0, 0, 0.18);
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.18);
   }
 
   #goTop svg {
-    width: 1.375rem;
-    height: 1.375rem;
+    width: 22px;
+    height: 22px;
     stroke-width: 2.6;
   }
 
