@@ -416,8 +416,8 @@ section.uipath::after {
 .uipath-header {
   position: absolute;
   z-index: 2;
-  top: 180px;
-  /* left: 180px; */
+
+  top: clamp(48px, 8vw, 178px);
   left: clamp(48px, 8vw, 178px);
 }
 .uipath-title {
@@ -440,7 +440,8 @@ section.uipath::after {
   inset: 0;
   width: calc(100% - clamp(48px, 8vw, 178px));
   left: clamp(48px, 8vw, 178px);
-  bottom: 10%;
+  /* bottom: 10%; */
+  bottom: clamp(24px, 6vw, 80px);
 
   display: flex;
   align-items: self-end;
@@ -594,8 +595,6 @@ section.business {
 .business-header {
   position: absolute;
   z-index: 3;
-  /* top: 180px; */
-  
   top: clamp(48px, 8vw, 178px);
   left: clamp(48px, 8vw, 178px);
 }
