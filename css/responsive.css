@@ -408,24 +408,19 @@ section.about .value-circle {
     width: 100%;
     height: 100%;
 
-    background: url(/images/services_365.png) no-repeat right bottom;
-    background-size: 70% auto;
-    opacity: 0.5;
+    background: url(/images/services_365.png) no-repeat right 180% bottom 2%;
+    background-size: 120% auto;
+    opacity: 0.9;
     z-index: -1;
   }
-
-  /* .services-left {
-    background: url(/images/services_365.png) no-repeat left bottom;
-    background-size: contain;;
-  } */
+  .services-left .tag {
+    background: #f9f9f973;
+    backdrop-filter: blur(9px);
+    border: 1px solid #fff;
+  }
   .services-right {
     display: none;
   }
-  /* .services-right .services-image {
-    top: 68%;
-    left: 50%;
-    width: 100%;
-  }*/
   section.business .business-content:nth-child(3) .service-card {
     height: clamp(19.375rem, 30vw, 22rem);
   } 
@@ -439,8 +434,7 @@ section.about .value-circle {
     height: clamp(14rem, 20vw, 15rem);
   }
   .benefit-box {
-    bottom: vw;
-    /* position: static; */
+    bottom: 8%;
   }
   .benefit-desc {
     opacity: 1;

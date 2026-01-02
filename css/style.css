@@ -944,21 +944,22 @@ Section.recruit h5 {
   transition: transform 0.5s ease, opacity 0.35s ease;
 }
 
-/* hover 시 */
-.benefit-item:hover .benefit-box {
-  bottom: 5%;
-}
-.benefit-item:hover {
-  border-color: var(--primary);
-  filter: blur(.8);
-}
-.benefit-item:hover .benefit-title {
-  color: var(--primary);
-}
-.benefit-item:hover .benefit-desc {
-  opacity: 1;
-} 
+/* 마우스 기능이 있는(호버가 가능한) 장치에서만 실행 */
+@media (hover: hover) and (pointer: fine) {
 
+  .benefit-item:hover .benefit-box {
+    bottom: 5%;
+  }
+  .benefit-item:hover {
+    border-color: var(--primary);
+  }
+  .benefit-item:hover .benefit-title {
+    color: var(--primary);
+  }
+  .benefit-item:hover .benefit-desc {
+    opacity: 1;
+  }
+}
 
 .recruitment-cards {
   display: grid;
