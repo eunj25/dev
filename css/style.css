@@ -434,6 +434,9 @@ section.uipath::after {
   line-height: 1.6;
   letter-spacing: -0.72px;
 }
+section.uipath .cta-button {
+  display: none;
+}
 
 .uipath-box.slide {
   position: absolute;

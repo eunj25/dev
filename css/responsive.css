@@ -330,6 +330,11 @@ section.about .value-circle {
     padding: 0 4vw;
   }
 
+  .hero-subtitle br,
+  .section-desc br {
+    display: none;
+  }
+
   .hero-content {
     margin: 0;
   }
@@ -372,6 +377,7 @@ section.about .value-circle {
     height: 120dvh;
   }
   section.uipath .cta-button {
+    display: block;
     margin-top: 9vw;
   }
   section.uipath .dots {

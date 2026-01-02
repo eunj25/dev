@@ -81,6 +81,8 @@
     color: var(--bk);
     line-height: 1.6 !important;
     letter-spacing: -0.03em;
+    word-break: keep-all;
+    overflow-wrap: break-word;
  }
 
   img {
