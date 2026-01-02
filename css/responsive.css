@@ -425,10 +425,10 @@ section.about .value-circle {
     top: 68%;
     left: 50%;
     width: 100%;
-  }
+  }*/
   section.business .business-content:nth-child(3) .service-card {
     height: clamp(19.375rem, 30vw, 22rem);
-  } */
+  } 
 
   /* ========= recruit section */
   .benefits-grid {
@@ -439,7 +439,7 @@ section.about .value-circle {
     height: clamp(14rem, 20vw, 15rem);
   }
   .benefit-box {
-    bottom: 3vw;
+    bottom: vw;
     /* position: static; */
   }
   .benefit-desc {
