@@ -433,7 +433,7 @@ section.about .value-circle {
     display: none;
   }
   section.business .business-content:nth-child(3) .service-card {
-    height: clamp(19.375rem, 30vw, 22rem);
+    height: clamp(17.3rem, 30vw, 22rem);
   } 
 
   /* ========= recruit section */
