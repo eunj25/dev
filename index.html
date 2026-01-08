@@ -671,7 +671,6 @@
     
   </section>
 
-  <!-- <button class="go-top" aria-label="맨 위로 이동">↑</button> -->
   <div id="goTop" class="go-top">
     <svg viewBox="0 0 24 24" fill="none">
       <path d="M6 15L12 9L18 15" />
@@ -706,17 +705,15 @@
     const overlay = document.getElementById("menu-overlay");
 
     // ------------------------------------------------------
-    // [PART 1] 모바일 햄버거 메뉴 기능
+    // 모바일 햄버거 메뉴
     // ------------------------------------------------------
     if (hamburger && navMenu) {
       hamburger.addEventListener("click", () => {
-        // 메뉴 슬라이드 및 아이콘 애니메이션 토글
         navMenu.classList.toggle("active");
         hamburger.classList.toggle("active");
         overlay.classList.toggle("active");
       });
 
-      // (옵션) 메뉴 링크 클릭 시 자동으로 닫기
       const navLinks = document.querySelectorAll(".nav-link");
       navLinks.forEach(link => {
         link.addEventListener("click", () => {
@@ -759,7 +756,7 @@
     });
 
     // =======================
-    // Go to Top Button JS 로직
+    // Go to Top Button
     // =======================
 
     document.addEventListener("DOMContentLoaded", () => {
@@ -859,8 +856,7 @@
 
     });
 
-
-    // banner - track 슬라이더
+    // banner 슬라이더
     const track = document.querySelector('.banner-track');
     const banners = document.querySelectorAll('.banner');
     let index = 0;
@@ -870,15 +866,12 @@
       track.style.transform = `translateX(-${index * 100}%)`;
     }, 3000);
 
-
-
     // =======================
     // Scroll Reveal Interaction
     // =======================
 
     const revealSections = document.querySelectorAll('section');
 
-    // IntersectionObserver 옵션
     const options = {
       threshold: 0.2,        // 20% 보이면 실행
       rootMargin: '0px 0px -50px 0px'
@@ -887,10 +880,9 @@
     // 화면에 들어올 때 실행되는 콜백
     const revealOnScroll = (entries, observer) => {
       entries.forEach(entry => {
-        // 들어온 섹션만 show 클래스 추가
         if (entry.isIntersecting) {
           entry.target.classList.add('show');
-          observer.unobserve(entry.target);  // 이미 보여준 섹션은 감시 해제
+          observer.unobserve(entry.target);  // 이미 보여준 섹션은 해제
         }
       });
     };

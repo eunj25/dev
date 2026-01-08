@@ -426,9 +426,6 @@ section.about .value-circle {
     align-items: flex-start;
     gap: 6px;
   }
-  .services-left .tag {
-
-  }
   .services-right {
     display: none;
   }
